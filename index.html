@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HM Vertex Group — Enterprise Spend Governance</title>
+<meta name="description" content="HM Vertex Group brings enterprise-grade governance to branded spend — strategic sourcing, SKU-level benchmarking, supplier governance, and evidence-based savings reporting. Start with a 10-SKU, 30-day benchmark." />
+<meta property="og:title" content="HM Vertex Group — Enterprise Spend Governance" />
+<meta property="og:description" content="SKU-level benchmarking and supplier governance for enterprise branded spend. Request a 10-SKU, 30-day benchmark." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 44'%3E%3Cpath d='M20 3 L37 40 L3 40 Z' fill='%2314243D'/%3E%3Cpath d='M20 3 L26 17 L14 17 Z' fill='%23B8945A'/%3E%3C/svg%3E" />
+<style>
+  :root{
+    --navy:#14243D; --navy-2:#0F1B2E; --bronze:#B8945A; --bronze-2:#9A7B45;
+    --cream:#F4EFE4; --cream-2:#FBF8F1; --teal:#2C8C87; --teal-2:#57BFB4;
+    --verified:#1E6B52; --ink:#26313B; --grey:#4A4F58; --line:#DCDDE1; --white:#fff;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:Inter,'Libre Franklin',system-ui,-apple-system,Segoe UI,sans-serif;
+    color:var(--ink);background:var(--cream-2);line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{line-height:1.2;margin:0 0 .5em;color:var(--navy);letter-spacing:-.01em}
+  a{color:var(--teal)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+  /* header */
+  header{position:sticky;top:0;z-index:20;background:rgba(20,36,61,.97);backdrop-filter:blur(6px)}
+  .bar{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:1080px;margin:0 auto}
+  .brand{display:flex;align-items:center;gap:11px;color:#fff;font-weight:700;letter-spacing:.02em}
+  .brand svg{display:block}
+  .brand small{display:block;font-weight:500;font-size:11px;letter-spacing:.18em;color:var(--bronze);text-transform:uppercase}
+  .brand b{font-size:16px;letter-spacing:.04em}
+  .nav-cta{background:var(--bronze);color:var(--navy);font-weight:700;text-decoration:none;
+    padding:10px 18px;border-radius:8px;font-size:14px;white-space:nowrap;transition:background .15s}
+  .nav-cta:hover{background:var(--teal-2);color:var(--navy)}
+
+  /* hero */
+  .hero{background:
+      radial-gradient(1200px 500px at 80% -10%,rgba(44,140,135,.20),transparent 60%),
+      linear-gradient(180deg,var(--navy),var(--navy-2));
+    color:#eaf0f6;padding:76px 0 84px}
+  .eyebrow{display:inline-block;font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--bronze);font-weight:700;margin-bottom:20px}
+  .hero h1{color:#fff;font-size:clamp(30px,5vw,50px);max-width:16ch}
+  .hero p.lead{font-size:clamp(16px,2vw,20px);color:#c7d2df;max-width:60ch;margin:22px 0 34px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;padding:15px 26px;border-radius:10px;font-size:15.5px;transition:transform .12s,background .15s}
+  .btn:hover{transform:translateY(-1px)}
+  .btn.primary{background:var(--bronze);color:var(--navy)}
+  .btn.primary:hover{background:#c9a869}
+  .btn.ghost{border:1.5px solid rgba(255,255,255,.4);color:#fff}
+  .btn.ghost:hover{border-color:var(--bronze);color:var(--bronze)}
+  /* a11y: visible focus + skip link */
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--teal-2);outline-offset:2px}
+  .skip{position:absolute;left:-999px;top:0;z-index:100;background:var(--bronze);color:var(--navy);
+    font-weight:700;padding:12px 18px;border-radius:0 0 8px 0;text-decoration:none}
+  .skip:focus{left:0}
+  .trust{margin-top:30px;font-size:13px;color:#9fb0c2;letter-spacing:.02em}
+
+  section{padding:64px 0}
+  .sec-head{max-width:62ch;margin-bottom:38px}
+  .sec-head .eyebrow{color:var(--bronze-2)}
+  .sec-head h2{font-size:clamp(24px,3.4vw,34px)}
+  .sec-head p{color:var(--grey);font-size:17px;margin:.4em 0 0}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px}
+  .card h3{font-size:18px;display:flex;align-items:center;gap:10px}
+  .card h3 .dot{width:9px;height:9px;border-radius:50%;background:var(--teal);flex:none}
+  .card ul{margin:0;padding-left:0;list-style:none}
+  .card li{padding:9px 0 9px 26px;position:relative;color:var(--grey);border-top:1px solid #eef0f2;font-size:15px}
+  .card li:first-child{border-top:none}
+  .card li::before{content:"";position:absolute;left:4px;top:16px;width:9px;height:9px;
+    border-right:2px solid var(--bronze);border-bottom:2px solid var(--bronze);transform:rotate(45deg)}
+
+  .deliver{background:var(--cream)}
+  .deliver .grid2{gap:22px}
+  .deliver .card{background:var(--cream-2)}
+  .deliver .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.04em;
+    color:var(--verified);background:var(--e0f0e8,#E0F0E8);padding:3px 10px;border-radius:99px;margin-bottom:10px}
+  .why{background:var(--navy);color:#dbe4ee}
+  .why h2{color:#fff}
+  .why p{font-size:18px;max-width:70ch;color:#c7d2df}
+
+  /* benchmark offer */
+  .offer{background:linear-gradient(180deg,var(--cream-2),#fff)}
+  .offer .box{background:#fff;border:1px solid var(--line);border-left:5px solid var(--bronze);
+    border-radius:14px;padding:34px;box-shadow:0 12px 40px rgba(20,36,61,.06)}
+  .offer .kicker{font-weight:800;color:var(--navy);font-size:20px;margin-bottom:8px}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+  .step{padding:18px;background:var(--cream-2);border:1px solid var(--line);border-radius:11px}
+  .step .n{width:30px;height:30px;border-radius:50%;background:var(--navy);color:var(--bronze);
+    font-weight:800;display:grid;place-items:center;margin-bottom:12px;font-size:15px}
+  .step b{color:var(--navy);display:block;margin-bottom:3px}
+  .step span{color:var(--grey);font-size:14px}
+
+  /* form */
+  .form{background:var(--navy-2)}
+  .form .wrap{max-width:720px}
+  .form h2{color:#fff;text-align:center}
+  .form .sub{color:#a9b7c7;text-align:center;max-width:52ch;margin:0 auto 30px}
+  form{background:#fff;border-radius:16px;padding:30px}
+  .field{margin-bottom:16px}
+  .field label{display:block;font-weight:600;color:var(--navy);font-size:14px;margin-bottom:6px}
+  .field label .req{color:var(--bronze-2)}
+  .field input,.field textarea{width:100%;padding:12px 13px;border:1.5px solid var(--line);border-radius:9px;
+    font-family:inherit;font-size:15px;color:var(--ink);background:#fff;transition:border-color .15s}
+  .field input:focus,.field textarea:focus{outline:none;border-color:var(--teal)}
+  .field textarea{min-height:110px;resize:vertical}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .submit{width:100%;background:var(--navy);color:#fff;font-weight:700;font-size:16px;
+    border:none;padding:16px;border-radius:10px;cursor:pointer;transition:background .15s}
+  .submit:hover{background:var(--teal)}
+  .submit:disabled{opacity:.6;cursor:not-allowed}
+  .form-note{text-align:center;color:#8a97a6;font-size:12.5px;margin-top:14px}
+  .ok,.err{display:none;padding:16px;border-radius:10px;margin-bottom:18px;font-weight:600}
+  .ok{background:#E0F0E8;color:var(--verified);border:1px solid #b9dcc9}
+  .err{background:#F4E0DC;color:#B23A2E;border:1px solid #eec4bc}
+
+  footer{background:var(--navy);color:#8ea0b4;padding:34px 0;font-size:13.5px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+  footer a{color:var(--bronze)}
+
+  @media(max-width:720px){
+    .grid2,.two,.steps{grid-template-columns:1fr}
+    .hero{padding:54px 0 60px}
+    section{padding:48px 0}
+    .brand small{display:none}
+    form{padding:22px}
+  }
+</style>
+</head>
+<body>
+
+<a class="skip" href="#benchmark">Skip to benchmark request</a>
+<header>
+  <div class="bar">
+    <div class="brand">
+      <svg width="26" height="29" viewBox="0 0 40 44" aria-hidden="true"><path d="M20 3 L37 40 L3 40 Z" fill="#B8945A"/><path d="M20 3 L26 17 L14 17 Z" fill="#14243D"/></svg>
+      <span><small>HM Vertex Group</small><b>VERTEX</b></span>
+    </div>
+    <a class="nav-cta" href="#benchmark">Request a Benchmark</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Enterprise Procurement Governance</span>
+    <h1>Enterprise Spend Governance for Print, Promo, POD, Kitting, Fulfillment &amp; Freight</h1>
+    <p class="lead">HM Vertex Group helps enterprise brands reduce the cost and complexity of branded spend through strategic sourcing, SKU-level benchmarking, supplier governance, and evidence-based savings reporting. We don't replace your creative agencies — we optimize the supply chain that executes their vision.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="#benchmark">Request your 10-SKU Benchmark</a>
+      <a class="btn ghost" href="#how">See how it works</a>
+    </div>
+    <div class="trust">Governance-first · Incentives aligned to your cost reduction · No commitment to switch suppliers</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Scope</span>
+      <h2>What we optimize, and what we benchmark</h2>
+      <p>We bring enterprise-grade governance to a historically fragmented category — so you pay the market rate, use the right suppliers, and can prove it.</p>
+    </div>
+    <div class="grid2">
+      <div class="card">
+        <h3><span class="dot"></span>What we optimize</h3>
+        <ul>
+          <li>High-volume print &amp; packaging</li>
+          <li>Promotional products &amp; apparel</li>
+          <li>Print-on-demand &amp; company store programs</li>
+          <li>Complex kitting &amp; assembly projects</li>
+          <li>Fulfillment operations &amp; warehousing</li>
+          <li>Freight &amp; logistics spend</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="dot"></span>What we benchmark</h3>
+        <ul>
+          <li>SKU-level unit costs &amp; historical pricing</li>
+          <li>Supplier margins &amp; markup transparency</li>
+          <li>Freight cost as a percentage of product cost</li>
+          <li>Rush-order premiums &amp; hidden fees</li>
+          <li>On-time delivery &amp; supplier SLA compliance</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="deliver">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What we deliver</span>
+      <h2>Governance you can act on</h2>
+    </div>
+    <div class="grid2">
+      <div class="card">
+        <span class="tag">Visibility</span>
+        <h3>Spend visibility</h3>
+        <p style="color:var(--grey);margin:0">Comprehensive reporting that tracks category performance and supplier concentration across your branded spend.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Governance</span>
+        <h3>Supplier governance</h3>
+        <p style="color:var(--grey);margin:0">Streamlined vendor lists, strict SLA enforcement, and mitigated supply-chain risk.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Savings reporting</span>
+        <h3>Evidence-based ROI</h3>
+        <p style="color:var(--grey);margin:0">Cost reductions measured against documented historical baselines and your signed methodology — reported transparently, not asserted.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Alignment</span>
+        <h3>Client-retained value</h3>
+        <p style="color:var(--grey);margin:0">A transparent model designed to maximize the value kept by your organization.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" style="color:var(--bronze)">Why HM Vertex Group</span>
+      <h2>An objective extension of your procurement &amp; finance teams</h2>
+    </div>
+    <p>Unlike traditional distributors focused on maximizing product markups, our incentives are aligned with your cost-reduction goals. We introduce enterprise-grade governance to your branded materials category and help you validate that your current supply chain is operating at peak financial efficiency — a measurable, evidence-based ROI on every project.</p>
+  </div>
+</section>
+
+<section class="offer" id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The low-risk first step</span>
+      <h2>10-SKU &middot; 30-Day Benchmark</h2>
+      <p>Stop guessing. Start governing.</p>
+    </div>
+    <div class="box">
+      <div class="kicker">Provide 10 SKUs. Get a direct-source market benchmark in 30 days.</div>
+      <p style="color:var(--grey);margin:.2em 0 0">Give us 10 of your highest-spend or most complex SKUs. Within 30 days our team conducts a direct-source market benchmark and presents a comparative analysis of your current baseline landed cost against the optimized market rate. No disruption to your current operations. No commitment to switch suppliers until savings are verified.</p>
+      <div class="steps">
+        <div class="step"><div class="n">1</div><b>You share 10 SKUs</b><span>Your highest-spend or most complex branded items — categories are fine to start.</span></div>
+        <div class="step"><div class="n">2</div><b>We benchmark in 30 days</b><span>Direct-source market analysis at the SKU level, against your current baseline.</span></div>
+        <div class="step"><div class="n">3</div><b>You see the comparison</b><span>A clear baseline-vs-market view. You decide what to do next — no obligation.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="form" id="benchmark">
+  <div class="wrap">
+    <h2>Request your 10-SKU Benchmark</h2>
+    <p class="sub">Tell us where to send it and paste up to 10 of your highest-spend SKUs or categories. A Vertex analyst follows up within one business day.</p>
+    <div class="ok" id="ok" role="status" aria-live="polite">Request received. A Vertex analyst will follow up within one business day.</div>
+    <div class="err" id="err" role="alert">That didn't send. Please check your connection and try again — your details are still here.</div>
+    <form id="benchmarkForm" novalidate aria-describedby="ok err">
+      <div class="two">
+        <div class="field"><label for="f-name">Full name <span class="req" aria-hidden="true">*</span></label><input id="f-name" name="name" type="text" required autocomplete="name" aria-required="true" /></div>
+        <div class="field"><label for="f-company">Company <span class="req" aria-hidden="true">*</span></label><input id="f-company" name="company" type="text" required autocomplete="organization" aria-required="true" /></div>
+      </div>
+      <div class="two">
+        <div class="field"><label for="f-email">Work email <span class="req" aria-hidden="true">*</span></label><input id="f-email" name="email" type="email" required autocomplete="email" aria-required="true" /></div>
+        <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" /></div>
+      </div>
+      <div class="field"><label for="f-category">Category / role (optional)</label><input id="f-category" name="category" type="text" placeholder="e.g. Print &amp; packaging, POD, kitting, freight" /></div>
+      <div class="field"><label for="f-skus">Your 10 SKUs or spend categories <span class="req" aria-hidden="true">*</span></label>
+        <textarea id="f-skus" name="skus" required aria-required="true" placeholder="Paste up to 10 of your highest-spend or most complex SKUs — item names, numbers, or categories. One per line is perfect."></textarea></div>
+      <button class="submit" type="submit" id="submitBtn">Request my benchmark &rarr;</button>
+      <div class="form-note">No commitment to switch suppliers. Your information is used only to prepare your benchmark.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="yr"></span> HM Vertex Group — Enterprise Spend Governance</div>
+    <div>Benchmark requests are handled through the form above.</div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+/* Internal follow-up route — delivers the benchmark request to the Vertex inbox only.
+   Reuses the verified AYNP Web3Forms delivery key. No customer auto-notification. */
+const VERTEX_INTAKE_KEY = "d1ced289-a64f-47aa-91f5-ceaa254ee98f";
+
+const form = document.getElementById('benchmarkForm');
+const ok = document.getElementById('ok');
+const err = document.getElementById('err');
+const btn = document.getElementById('submitBtn');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  ok.style.display = err.style.display = 'none';
+  if (!form.checkValidity()) { form.reportValidity(); return; }
+  btn.disabled = true; btn.textContent = 'Sending…';
+  const d = Object.fromEntries(new FormData(form).entries());
+  const message =
+    'NEW VERTEX 10-SKU BENCHMARK REQUEST\n\n' +
+    'Name: ' + d.name + '\nCompany: ' + d.company + '\nEmail: ' + d.email +
+    '\nPhone: ' + (d.phone || '—') + '\nCategory/role: ' + (d.category || '—') +
+    '\n\n--- 10 SKUs / categories provided ---\n' + d.skus +
+    '\n\nSubmitted: ' + new Date().toLocaleString();
+  try {
+    const r = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        access_key: VERTEX_INTAKE_KEY,
+        subject: 'Vertex 10-SKU Benchmark request — ' + d.company,
+        from_name: 'Vertex Benchmark Intake',
+        email: 'braden@allyouneedpromos.com',
+        message
+      })
+    });
+    const j = await r.json();
+    if (j.success) {
+      form.style.display = 'none';
+      ok.style.display = 'block';
+      ok.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } else { throw new Error('submit failed'); }
+  } catch (_) {
+    err.style.display = 'block';
+    btn.disabled = false; btn.textContent = 'Request my benchmark →';
+  }
+});
+</script>
+</body>
+</html>
