@@ -1,0 +1,21 @@
+:root{
+  --vertex-apex-logo:url("/assets/apex.svg");
+  --vertex-apex-logo-dark:url("/assets/apex-dark.svg");
+  --vertex-hero-desktop:
+    radial-gradient(900px 460px at 86% 8%, rgba(87,191,180,.18), transparent 62%),
+    radial-gradient(700px 380px at 20% 94%, rgba(184,148,90,.20), transparent 58%),
+    linear-gradient(180deg,#14243d 0%,#0f1b2e 100%);
+  --vertex-hero-mobile:
+    radial-gradient(420px 320px at 80% 0%, rgba(87,191,180,.20), transparent 62%),
+    linear-gradient(180deg,#14243d 0%,#0f1b2e 100%);
+  --vertex-login-desktop:var(--vertex-hero-desktop);
+  --vertex-login-mobile:var(--vertex-hero-mobile);
+}
+
+.vertex-hero-bg{background:var(--vertex-hero-desktop)}
+.vertex-login-bg{background:var(--vertex-login-desktop)}
+
+@media (max-width:720px){
+  .vertex-hero-bg{background:var(--vertex-hero-mobile)}
+  .vertex-login-bg{background:var(--vertex-login-mobile)}
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Vertex",
+  "short_name": "Vertex",
+  "icons": [
+    {
+      "src": "/assets/apple-touch-icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-maskable.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#14243d",
+  "background_color": "#0f1b2e",
+  "display": "standalone"
+}
