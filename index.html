@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Vertex | Marketing Supply Chain Performance Visibility</title>
-<meta name="description" content="Vertex makes marketing supply chain performance visible with executive intelligence and governance for marketing supply chains. Request a benchmark for up to 10 priority SKUs." />
+<meta name="description" content="Vertex makes marketing supply chain performance visible with executive intelligence and governance. Request a benchmark for up to 10 priority SKUs." />
 <link rel="canonical" href="https://prismatic-fudge-ba0745.netlify.app/" />
 <meta property="og:title" content="Vertex | Marketing Supply Chain Performance Visibility" />
 <meta property="og:description" content="Executive intelligence and governance for marketing supply chains. Request a benchmark for up to 10 priority SKUs." />
@@ -12,388 +12,34 @@
 <meta property="og:url" content="https://prismatic-fudge-ba0745.netlify.app/" />
 <meta property="og:image" content="https://prismatic-fudge-ba0745.netlify.app/assets/apex-social.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Vertex | Marketing Supply Chain Performance Visibility" />
-<meta name="twitter:description" content="Executive intelligence and governance for marketing supply chains. Request a benchmark for up to 10 priority SKUs." />
-<meta name="twitter:image" content="https://prismatic-fudge-ba0745.netlify.app/assets/apex-social.png" />
 <link rel="icon" href="/assets/apex.svg" type="image/svg+xml" />
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <link rel="stylesheet" href="/implementation/vertex-launch-assets-v2.css" />
 <style>
-  :root{
-    --navy:#14243d;
-    --navy-2:#0f1b2e;
-    --bronze:#b8945a;
-    --bronze-2:#9a7b45;
-    --cream:#f4efe4;
-    --cream-2:#fbf8f1;
-    --teal:#2c8c87;
-    --teal-2:#57bfb4;
-    --green:#1e6b52;
-    --ink:#26313b;
-    --grey:#4a4f58;
-    --line:#dcdde1;
-    --white:#fff;
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0;font-family:Inter,"Libre Franklin",system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:var(--cream-2);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-  body.no-scroll{overflow:hidden}
-  h1,h2,h3{line-height:1.15;margin:0 0 .5em;color:var(--navy);letter-spacing:0;overflow-wrap:break-word}
-  p{margin:0 0 1rem;overflow-wrap:break-word}
-  a{color:var(--teal)}
-  img{max-width:100%;height:auto}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-  .skip{position:absolute;left:-999px;top:0;z-index:100;background:var(--bronze);color:var(--navy);font-weight:800;padding:12px 18px;border-radius:0 0 8px 0;text-decoration:none}
-  .skip:focus{left:0}
-  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--teal-2);outline-offset:3px}
-  header{position:sticky;top:0;z-index:20;background:rgba(20,36,61,.97);backdrop-filter:blur(8px)}
-  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 24px;max-width:1080px;margin:0 auto}
-  .brand{display:flex;align-items:center;gap:11px;color:#fff;font-weight:800;letter-spacing:.02em;text-decoration:none}
-  .brand img{display:block;width:28px;height:31px;flex:none}
-  .brand small{display:block;font-weight:600;font-size:11px;letter-spacing:.18em;color:var(--bronze);text-transform:uppercase}
-  .brand b{font-size:16px;letter-spacing:.04em}
-  .nav{display:flex;align-items:center;gap:22px}
-  .nav a{color:#dce6f1;text-decoration:none;font-weight:700;font-size:14px}
-  .nav a:hover{color:#fff}
-  .nav-cta{background:var(--bronze);color:var(--navy)!important;font-weight:800;text-decoration:none;padding:10px 18px;border-radius:8px;font-size:14px;white-space:nowrap}
-  .nav-cta:hover{background:var(--teal-2)}
-  .menu-btn{display:none;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid rgba(255,255,255,.25);border-radius:8px;background:transparent;color:#fff}
-  .menu-btn span,.menu-btn span::before,.menu-btn span::after{display:block;width:18px;height:2px;background:currentColor;content:"";position:relative}
-  .menu-btn span::before{position:absolute;top:-6px}
-  .menu-btn span::after{position:absolute;top:6px}
-  .mobile-nav{display:none;position:fixed;inset:64px 16px auto 16px;z-index:25;background:#fff;border:1px solid var(--line);border-radius:8px;box-shadow:0 20px 60px rgba(15,27,46,.24);padding:12px}
-  .mobile-nav a{display:flex;align-items:center;gap:10px;color:var(--navy);text-decoration:none;font-weight:800;padding:14px;border-radius:6px}
-  .mobile-nav img{width:22px;height:24px}
-  .mobile-nav a:hover{background:var(--cream)}
-  .mobile-nav.open{display:block}
-  .hero{color:#eaf0f6;padding:74px 0 82px}
-  .eyebrow{display:inline-block;font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--bronze);font-weight:800;margin-bottom:18px}
-  .hero h1{color:#fff;font-size:clamp(34px,5.4vw,58px);max-width:15ch}
-  .hero p.lead{font-size:clamp(17px,2vw,21px);color:#d1dbe7;max-width:58ch;margin:22px 0 32px}
-  .cta-row{display:flex;flex-wrap:wrap;gap:14px}
-  .btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:800;padding:14px 22px;border-radius:8px;font-size:15px;min-height:48px}
-  .btn.primary{background:var(--bronze);color:var(--navy)}
-  .btn.primary:hover{background:#c9a869}
-  .btn.ghost{border:1.5px solid rgba(255,255,255,.42);color:#fff}
-  .btn.ghost:hover{border-color:var(--bronze);color:var(--bronze)}
-  .trust{margin-top:28px;font-size:13px;color:#adbdcf;letter-spacing:.02em}
-  section{padding:62px 0}
-  .sec-head{max-width:64ch;margin-bottom:34px}
-  .sec-head .eyebrow{color:var(--bronze-2)}
-  .sec-head h2{font-size:clamp(25px,3.2vw,34px)}
-  .sec-head p{color:var(--grey);font-size:17px;margin:.3em 0 0}
-  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-  .card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:24px}
-  .card h3{font-size:18px;display:flex;align-items:center;gap:10px}
-  .dot{width:9px;height:9px;border-radius:50%;background:var(--teal);flex:none}
-  .card p,.card li{color:var(--grey);font-size:15px}
-  .card ul{margin:0;padding-left:0;list-style:none}
-  .card li{padding:9px 0 9px 24px;position:relative;border-top:1px solid #eef0f2}
-  .card li:first-child{border-top:0}
-  .card li::before{content:"";position:absolute;left:4px;top:16px;width:9px;height:9px;border-right:2px solid var(--bronze);border-bottom:2px solid var(--bronze);transform:rotate(45deg)}
-  .band{background:var(--cream)}
-  .step{background:#fff;border:1px solid var(--line);border-radius:8px;padding:22px}
-  .step .n{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800;margin-bottom:12px}
-  .step b{display:block;color:var(--navy);font-size:17px;margin-bottom:7px}
-  .step span{color:var(--grey);font-size:15px}
-  .form-section{background:linear-gradient(180deg,var(--navy),var(--navy-2));color:#eaf0f6}
-  .form-section h2{color:#fff;font-size:clamp(26px,3.5vw,38px)}
-  .form-section .sub{color:#cbd7e4;max-width:68ch;font-size:17px}
-  form{margin-top:26px;background:#fff;border-radius:8px;padding:26px;color:var(--ink);box-shadow:0 18px 54px rgba(0,0,0,.22)}
-  .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-  .field{margin-bottom:18px}
-  label{display:block;font-weight:800;color:var(--navy);margin-bottom:7px;font-size:14px}
-  input,textarea{width:100%;border:1.5px solid #cfd6de;border-radius:8px;padding:13px 14px;font:inherit;color:var(--ink);background:#fff}
-  textarea{min-height:145px;resize:vertical}
-  input:invalid:not(:focus):not(:placeholder-shown),textarea:invalid:not(:focus):not(:placeholder-shown){border-color:#b42318}
-  .req{color:#b42318}
-  .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-  .submit{display:inline-flex;align-items:center;justify-content:center;border:0;background:var(--bronze);color:var(--navy);font-weight:900;border-radius:8px;padding:15px 24px;cursor:pointer;font-size:16px;min-height:50px}
-  .submit:hover{background:#c9a869}
-  .submit:disabled{cursor:wait;opacity:.74}
-  .form-note{margin-top:13px;color:var(--grey);font-size:13px}
-  .state{display:none;margin:18px 0 0;border-radius:8px;padding:13px 15px;font-weight:800}
-  .ok{background:#e0f0e8;color:var(--green);border:1px solid #aad4bd}
-  .err{background:#fde8e8;color:#9b1c1c;border:1px solid #f5b5b5}
-  .loading{background:#eef4fb;color:var(--navy);border:1px solid #c4d6ea}
-  footer{background:var(--navy-2);color:#d9e1eb;padding:34px 0;font-size:14px}
-  footer .wrap{display:flex;justify-content:space-between;gap:22px;align-items:center}
-  .footer-brand{display:flex;align-items:center;gap:10px;font-weight:900;color:#fff}
-  .footer-brand img{width:24px;height:27px}
-  footer a{color:#d9e1eb;text-decoration:none;font-weight:800}
-  footer a:hover{color:#fff}
-  @media (prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto}
-    *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
-  }
-  @media (max-width:860px){
-    .nav{display:none}
-    .menu-btn{display:flex}
-    .grid2,.grid3{grid-template-columns:1fr}
-    .hero{padding:58px 0 64px}
-  }
-  @media (max-width:640px){
-    .wrap{padding:0 18px}
-    .bar{padding:12px 18px}
-    .brand small{display:none}
-    .brand b{font-size:15px}
-    .hero h1{font-size:clamp(30px,9vw,38px);max-width:11ch}
-    .hero p.lead{font-size:16px;max-width:32ch}
-    .sec-head h2{font-size:26px;max-width:18ch}
-    .sec-head p{max-width:34ch}
-    .trust{font-size:12px;max-width:34ch}
-    .cta-row{display:grid;grid-template-columns:1fr}
-    .btn{width:100%}
-    .cta-row,.grid2,.grid3,form{max-width:354px}
-    section{padding:48px 0}
-    form{padding:20px}
-    .two{grid-template-columns:1fr;gap:0}
-    footer .wrap{display:grid}
-  }
+:root{--navy:#14243d;--navy2:#0f1b2e;--bronze:#b8945a;--bronze2:#9a7b45;--cream:#f4efe4;--cream2:#fbf8f1;--teal:#2c8c87;--teal2:#57bfb4;--green:#1e6b52;--red:#b42318;--ink:#26313b;--grey:#4a4f58;--line:#dcdde1;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,"Libre Franklin",system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:var(--cream2);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}h1,h2,h3{line-height:1.15;margin:0 0 .5em;color:var(--navy);overflow-wrap:break-word}p{margin:0 0 1rem;overflow-wrap:break-word}a{color:var(--teal)}img{max-width:100%;height:auto}.wrap{max-width:1100px;margin:0 auto;padding:0 24px}.skip{position:absolute;left:-999px;top:0;z-index:100;background:var(--bronze);color:var(--navy);font-weight:900;padding:12px 18px;text-decoration:none}.skip:focus{left:0}a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--teal2);outline-offset:3px}header{position:sticky;top:0;z-index:30;background:rgba(20,36,61,.97);backdrop-filter:blur(8px)}.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 24px;max-width:1100px;margin:0 auto}.brand{display:flex;align-items:center;gap:11px;color:#fff;font-weight:900;letter-spacing:.04em;text-decoration:none}.brand img{width:28px;height:31px}.brand small{display:block;color:var(--bronze);font-size:10px;letter-spacing:.18em}.brand b{display:block;font-size:16px}.nav{display:flex;align-items:center;gap:20px}.nav a{color:#dce6f1;text-decoration:none;font-weight:800;font-size:14px}.nav a:hover{color:#fff}.nav-cta{background:var(--bronze);color:var(--navy)!important;padding:10px 17px;border-radius:8px}.menu{display:none;width:42px;height:42px;border:1px solid rgba(255,255,255,.28);border-radius:8px;background:transparent;color:#fff;font-weight:900}.mobile-nav{display:none;position:fixed;z-index:35;inset:66px 16px auto;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px;box-shadow:0 20px 60px rgba(15,27,46,.25)}.mobile-nav.open{display:block}.mobile-nav a{display:block;color:var(--navy);font-weight:900;text-decoration:none;padding:13px;border-radius:7px}.mobile-nav a:hover{background:var(--cream)}.hero{color:#eaf0f6;padding:76px 0 82px}.eyebrow{display:inline-block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--bronze);font-weight:900;margin-bottom:18px}.hero h1{color:#fff;font-size:clamp(36px,5.6vw,60px);max-width:15ch}.hero .lead{font-size:clamp(17px,2vw,21px);color:#d1dbe7;max-width:58ch;margin:22px 0 30px}.cta-row{display:flex;gap:13px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 21px;border-radius:8px;text-decoration:none;font-weight:900}.btn.primary{background:var(--bronze);color:var(--navy)}.btn.secondary{border:1.5px solid rgba(255,255,255,.45);color:#fff}.trust{margin-top:25px;color:#adbdcf;font-size:13px}section{padding:62px 0}.band{background:var(--cream)}.sec-head{max-width:68ch;margin-bottom:32px}.sec-head h2{font-size:clamp(27px,3.5vw,38px)}.sec-head p{color:var(--grey);font-size:17px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:23px}.card h3{font-size:18px}.card p,.card li{color:var(--grey);font-size:15px}.card ul{margin:0;padding-left:20px}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--teal);margin-right:8px}.preview-shell{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;box-shadow:0 14px 40px rgba(15,27,46,.08)}.preview-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:18px}.preview-head h3{font-size:23px;margin:0}.preview-head p{margin:4px 0 0;color:var(--grey)}.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.product{border:1px solid var(--line);border-radius:9px;overflow:hidden;background:var(--cream2)}.product-media{height:160px;background:linear-gradient(145deg,#dfe6ee,#f8f5ed);display:grid;place-items:center;position:relative}.product-media img{width:100%;height:100%;object-fit:contain;background:#fff}.placeholder{font-size:46px;font-weight:900;color:var(--navy);opacity:.2}.image-state{position:absolute;left:7px;bottom:7px;background:rgba(15,27,46,.92);color:#fff;border-radius:6px;padding:4px 7px;font-size:10px;font-weight:900}.product-body{padding:13px}.product h4{margin:0 0 4px;color:var(--navy);font-size:15px}.product-meta{font-size:12px;color:var(--grey)}.preview-link{white-space:nowrap;font-weight:900}.steps .card{position:relative}.step-number{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--navy);color:#fff;font-weight:900;margin-bottom:12px}.form-section{background:linear-gradient(180deg,var(--navy),var(--navy2));color:#eaf0f6}.form-section h2{color:#fff;font-size:clamp(28px,3.7vw,40px)}.form-section .sub{color:#cbd7e4;max-width:68ch;font-size:17px}.state{display:none;margin:18px 0 0;border-radius:8px;padding:13px 15px;font-weight:900}.ok{background:#e0f0e8;color:var(--green);border:1px solid #aad4bd}.err{background:#fde8e8;color:#9b1c1c;border:1px solid #f5b5b5}.loading{background:#eef4fb;color:var(--navy);border:1px solid #c4d6ea}form{margin-top:25px;background:#fff;border-radius:10px;padding:26px;color:var(--ink);box-shadow:0 18px 54px rgba(0,0,0,.22)}.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field{margin-bottom:18px}label{display:block;font-weight:900;color:var(--navy);margin-bottom:7px;font-size:14px}input,textarea{width:100%;border:1.5px solid #cfd6de;border-radius:8px;padding:13px 14px;font:inherit;color:var(--ink);background:#fff}textarea{min-height:150px;resize:vertical}.req{color:var(--red)}.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.submit{display:inline-flex;align-items:center;justify-content:center;border:0;background:var(--bronze);color:var(--navy);font-weight:900;border-radius:8px;padding:15px 24px;cursor:pointer;font-size:16px;min-height:50px}.submit:disabled{cursor:wait;opacity:.72}.form-note{margin-top:13px;color:var(--grey);font-size:13px}.form-note a{font-weight:900}footer{background:var(--navy2);color:#d9e1eb;padding:32px 0;font-size:14px}footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:18px}.footer-brand{display:flex;align-items:center;gap:9px;color:#fff;font-weight:900}.footer-brand img{width:24px;height:27px}.footer-links{display:flex;gap:16px;flex-wrap:wrap}.footer-links a{color:#d9e1eb;text-decoration:none;font-weight:800}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}@media(max-width:860px){.nav{display:none}.menu{display:block}.grid3,.grid2,.product-grid{grid-template-columns:1fr}.hero{padding:60px 0 66px}.preview-head{display:block}.preview-link{display:inline-block;margin-top:10px}.product-grid{max-width:430px}}@media(max-width:640px){.wrap{padding:0 18px}.bar{padding:12px 18px}.brand small{display:none}.hero h1{font-size:clamp(32px,10vw,42px)}.cta-row{display:grid}.btn{width:100%}.two{grid-template-columns:1fr;gap:0}form{padding:20px}footer .wrap{display:grid}.product-grid{max-width:100%}}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header>
-  <div class="bar">
-    <a class="brand" href="/" aria-label="Vertex home">
-      <img src="/assets/apex-dark.svg" alt="" width="28" height="31" />
-      <span><small>Apex</small><b>VERTEX</b></span>
-    </a>
-    <nav class="nav" aria-label="Primary">
-      <a href="#visibility">Visibility</a>
-      <a href="#governance">Governance</a>
-      <a class="nav-cta" href="#benchmark">Request a benchmark</a>
-    </nav>
-    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open navigation"><span aria-hidden="true"></span></button>
-  </div>
-  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
-    <a href="/"><img src="/assets/apex.svg" alt="" /> Vertex home</a>
-    <a href="#visibility">Visibility</a>
-    <a href="#governance">Governance</a>
-    <a href="#benchmark">Request a benchmark</a>
-  </nav>
-</header>
-
+<header><div class="bar"><a class="brand" href="/" aria-label="Vertex home"><img src="/assets/apex-dark.svg" alt="" /><span><small>APEX</small><b>VERTEX</b></span></a><nav class="nav" aria-label="Primary"><a href="#visibility">Visibility</a><a href="#intelligence">Product intelligence</a><a href="/dashboard.html">Dashboard preview</a><a class="nav-cta" href="#benchmark">Request a benchmark</a></nav><button class="menu" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open navigation">Menu</button></div><nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation"><a href="#visibility">Visibility</a><a href="#intelligence">Product intelligence</a><a href="/dashboard.html">Dashboard preview</a><a href="#benchmark">Request a benchmark</a><a href="/privacy.html">Privacy</a></nav></header>
 <main id="main">
-  <section class="hero vertex-hero-bg">
-    <div class="wrap">
-      <span class="eyebrow">Vertex</span>
-      <h1>Make marketing supply chain performance visible.</h1>
-      <p class="lead">Executive intelligence and governance for marketing supply chains.</p>
-      <div class="cta-row">
-        <a class="btn primary" href="#benchmark">Request a benchmark</a>
-        <a class="btn ghost" href="#visibility">See what Vertex covers</a>
-      </div>
-      <div class="trust">Benchmark up to 10 priority SKUs. Response target: one business day.</div>
-    </div>
-  </section>
-
-  <section id="visibility">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">Performance visibility</span>
-        <h2>Vertex turns fragmented marketing supply activity into an executive view.</h2>
-        <p>Prospective buyers can start with a focused benchmark across priority SKUs or spend categories before any broader operating decision.</p>
-      </div>
-      <div class="grid3">
-        <article class="card">
-          <h3><span class="dot"></span>SKU-level baseline</h3>
-          <p>Compare priority items, specifications, quantities, and landed-cost drivers in one structured intake.</p>
-        </article>
-        <article class="card">
-          <h3><span class="dot"></span>Supplier governance view</h3>
-          <p>Bring print, promo, packaging, fulfillment, and freight activity into a governance-ready operating picture.</p>
-        </article>
-        <article class="card">
-          <h3><span class="dot"></span>Decision support</h3>
-          <p>Equip leadership with benchmark context, variance signals, and next-step recommendations without requiring a supplier switch.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="band" id="governance">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">Executive governance</span>
-        <h2>Built for marketing supply chains that need control without slowing execution.</h2>
-        <p>Vertex is the public brand for benchmark intake, visibility, and governance conversations.</p>
-      </div>
-      <div class="grid2">
-        <article class="card">
-          <h3><span class="dot"></span>What Vertex organizes</h3>
-          <ul>
-            <li>Priority SKUs and high-friction spend categories</li>
-            <li>Specification, quantity, fulfillment, and freight context</li>
-            <li>Current process constraints and governance gaps</li>
-            <li>Executive-ready benchmark follow-up</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3><span class="dot"></span>What Vertex does not claim</h3>
-          <ul>
-            <li>No unsupported savings figures</li>
-            <li>No public customer outcome claims</li>
-            <li>No marketplace, checkout, or payment flow</li>
-            <li>No automatic supplier switching</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">Benchmark request</span>
-        <h2>Start with up to 10 priority SKUs.</h2>
-        <p>The form is the only public contact method. A Vertex analyst follows up within one business day.</p>
-      </div>
-      <div class="grid3">
-        <div class="step"><div class="n">1</div><b>Share priority SKUs</b><span>Paste 1 to 10 item names, item numbers, or spend categories.</span></div>
-        <div class="step"><div class="n">2</div><b>Vertex reviews context</b><span>We review the details and confirm what is needed for a useful benchmark.</span></div>
-        <div class="step"><div class="n">3</div><b>You get next steps</b><span>The follow-up explains the benchmark path and the information required to proceed.</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="form-section" id="benchmark">
-    <div class="wrap">
-      <h2>Request your Vertex benchmark</h2>
-      <p class="sub">Paste up to 10 priority SKUs or spend categories. Required fields are marked.</p>
-      <div class="state ok" id="ok" role="status" aria-live="polite" tabindex="-1">Request received. A Vertex analyst will follow up within one business day.</div>
-      <div class="state err" id="err" role="alert" tabindex="-1">That did not send. Please check your connection and try again. Your details are still here.</div>
-      <div class="state loading" id="loading" role="status" aria-live="polite">Submitting your benchmark request...</div>
-      <form id="benchmarkForm" novalidate aria-describedby="form-note">
-        <div class="two">
-          <div class="field"><label for="f-name">Full name <span class="req" aria-hidden="true">*</span></label><input id="f-name" name="name" type="text" required autocomplete="name" aria-required="true" /></div>
-          <div class="field"><label for="f-company">Company <span class="req" aria-hidden="true">*</span></label><input id="f-company" name="company" type="text" required autocomplete="organization" aria-required="true" /></div>
-        </div>
-        <div class="two">
-          <div class="field"><label for="f-email">Work email <span class="req" aria-hidden="true">*</span></label><input id="f-email" name="email" type="email" required autocomplete="email" aria-required="true" /></div>
-          <div class="field"><label for="f-category">Category / role (optional)</label><input id="f-category" name="category" type="text" placeholder="Print, promo, kitting, fulfillment, freight" /></div>
-        </div>
-        <div class="field"><label for="f-skus">Priority SKUs or spend categories <span class="req" aria-hidden="true">*</span></label><textarea id="f-skus" name="skus" required aria-required="true" placeholder="Paste 1 to 10 priority SKUs or categories. One per line is ideal."></textarea></div>
-        <div class="field visually-hidden" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off" /></div>
-        <button class="submit" type="submit" id="submitBtn">Request my benchmark</button>
-        <div class="form-note" id="form-note">Your information is used only to prepare and route the benchmark request.</div>
-      </form>
-    </div>
-  </section>
+<section class="hero vertex-hero-bg"><div class="wrap"><span class="eyebrow">Vertex</span><h1>Make marketing supply chain performance visible.</h1><p class="lead">Executive intelligence and governance for marketing supply chains.</p><div class="cta-row"><a class="btn primary" href="#benchmark">Request a benchmark</a><a class="btn secondary" href="/dashboard.html">View dashboard preview</a></div><div class="trust">Benchmark up to 10 priority SKUs. Initial response target: one business day.</div></div></section>
+<section id="visibility"><div class="wrap"><div class="sec-head"><span class="eyebrow">Performance visibility</span><h2>Turn fragmented marketing supply activity into an executive operating view.</h2><p>Vertex organizes product, specification, quantity, fulfillment, freight, evidence, and governance context without requiring an automatic supplier switch.</p></div><div class="grid3"><article class="card"><h3><span class="dot"></span>SKU-level baseline</h3><p>Structure priority items, current specifications, demand, landed-cost drivers, and evidence readiness.</p></article><article class="card"><h3><span class="dot"></span>Supplier visibility</h3><p>Show controlled supplier and sourcing status while protecting direct-source paths and negotiated terms.</p></article><article class="card"><h3><span class="dot"></span>Decision support</h3><p>Surface variance, risk, data gaps, and recommended next actions for human review.</p></article></div></div></section>
+<section class="band" id="intelligence"><div class="wrap"><div class="sec-head"><span class="eyebrow">Product intelligence</span><h2>Real product records are entering the Vertex operating layer.</h2><p>This launch preview uses buyer-safe data. Commercial costs, direct supplier identities, and negotiated terms remain controlled.</p></div><div class="preview-shell"><div class="preview-head"><div><h3>Current product-data preview</h3><p id="previewStatus">Loading controlled product records…</p></div><a class="preview-link" href="/dashboard.html">Open executive dashboard →</a></div><div class="product-grid" id="productPreview"><div class="card">Loading product intelligence…</div></div></div></div></section>
+<section><div class="wrap"><div class="sec-head"><span class="eyebrow">Governance</span><h2>Built to support control without slowing execution.</h2></div><div class="grid2"><article class="card"><h3>What Vertex organizes</h3><ul><li>Priority SKUs and high-friction categories</li><li>Specifications, quantities, decoration, freight, and fulfillment</li><li>Data quality, image readiness, and evidence status</li><li>Executive recommendations and required human decisions</li></ul></article><article class="card"><h3>What Vertex does not do</h3><ul><li>No unsupported savings claims or customer outcomes</li><li>No marketplace, checkout, or public supplier discovery</li><li>No automatic supplier switching</li><li>No publication of controlled commercial data</li></ul></article></div></div></section>
+<section class="band steps"><div class="wrap"><div class="sec-head"><span class="eyebrow">Benchmark process</span><h2>Start with up to 10 priority SKUs.</h2><p>The benchmark request enters a tracked internal workflow owned by Braden.</p></div><div class="grid3"><article class="card"><div class="step-number">1</div><h3>Share priority items</h3><p>Submit 1–10 product names, item numbers, or spend categories.</p></article><article class="card"><div class="step-number">2</div><h3>Vertex validates the inputs</h3><p>Product, supplier, image, specification, quantity, freight, and evidence gaps are identified.</p></article><article class="card"><div class="step-number">3</div><h3>Receive the working path</h3><p>A Vertex analyst confirms the information required and the next benchmark actions.</p></article></div></div></section>
+<section class="form-section" id="benchmark"><div class="wrap"><h2>Request your Vertex benchmark</h2><p class="sub">Paste up to 10 priority SKUs or spend categories. Required fields are marked.</p><div class="state ok" id="ok" role="status" aria-live="polite" tabindex="-1">Request received. A Vertex analyst will follow up within one business day.</div><div class="state err" id="err" role="alert" tabindex="-1">That did not send. Check your connection and try again. Your details are still here.</div><div class="state loading" id="loading" role="status" aria-live="polite">Submitting your benchmark request…</div><form id="benchmarkForm" novalidate aria-describedby="form-note"><div class="two"><div class="field"><label for="f-name">Full name <span class="req" aria-hidden="true">*</span></label><input id="f-name" name="name" type="text" required autocomplete="name" aria-required="true" /></div><div class="field"><label for="f-company">Company <span class="req" aria-hidden="true">*</span></label><input id="f-company" name="company" type="text" required autocomplete="organization" aria-required="true" /></div></div><div class="two"><div class="field"><label for="f-email">Work email <span class="req" aria-hidden="true">*</span></label><input id="f-email" name="email" type="email" required autocomplete="email" aria-required="true" /></div><div class="field"><label for="f-category">Category or role (optional)</label><input id="f-category" name="category" type="text" placeholder="Print, promo, packaging, fulfillment, freight" /></div></div><div class="field"><label for="f-skus">Priority SKUs or spend categories <span class="req" aria-hidden="true">*</span></label><textarea id="f-skus" name="skus" required aria-required="true" placeholder="Paste 1 to 10 priority SKUs or categories. One per line is ideal."></textarea></div><div class="field visually-hidden" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off" /></div><button class="submit" type="submit" id="submitBtn">Request my benchmark</button><div class="form-note" id="form-note">Your information is used to prepare and route the request. Review the <a href="/privacy.html">Vertex Privacy Notice</a>.</div></form></div></section>
 </main>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-brand"><img src="/assets/apex-dark.svg" alt="" width="24" height="27" /> <span>Vertex</span></div>
-    <a href="#benchmark">Request a benchmark</a>
-  </div>
-</footer>
-
+<footer><div class="wrap"><div class="footer-brand"><img src="/assets/apex-dark.svg" alt="" /><span>Vertex · HM Vertex Group</span></div><div class="footer-links"><a href="/dashboard.html">Dashboard preview</a><a href="#benchmark">Request a benchmark</a><a href="/privacy.html">Privacy</a></div></div></footer>
 <script>
-const VERTEX_INTAKE_KEY = "d1ced289-a64f-47aa-91f5-ceaa254ee98f";
-const LEAD_DESTINATION = "braden@allyouneedpromos.com";
-const menuBtn = document.querySelector(".menu-btn");
-const mobileNav = document.getElementById("mobileNav");
-const form = document.getElementById("benchmarkForm");
-const ok = document.getElementById("ok");
-const err = document.getElementById("err");
-const loading = document.getElementById("loading");
-const btn = document.getElementById("submitBtn");
-const skus = document.getElementById("f-skus");
-
-menuBtn.addEventListener("click", () => {
-  const open = !mobileNav.classList.contains("open");
-  mobileNav.classList.toggle("open", open);
-  menuBtn.setAttribute("aria-expanded", String(open));
-});
-
-mobileNav.addEventListener("click", (event) => {
-  if (event.target.closest("a")) {
-    mobileNav.classList.remove("open");
-    menuBtn.setAttribute("aria-expanded", "false");
-  }
-});
-
-function skuItems(value) {
-  return value.split(/\r?\n|,/).map((item) => item.trim()).filter(Boolean);
-}
-
-function setFieldError(field, message) {
-  field.setCustomValidity(message);
-  field.setAttribute("aria-invalid", message ? "true" : "false");
-}
-
-function validateSkuCount() {
-  const count = skuItems(skus.value).length;
-  const valid = count >= 1 && count <= 10;
-  setFieldError(skus, valid ? "" : "Enter between 1 and 10 priority SKUs or categories.");
-  return valid;
-}
-
-skus.addEventListener("input", validateSkuCount);
-
-form.addEventListener("submit", async (event) => {
-  event.preventDefault();
-  ok.style.display = "none";
-  err.style.display = "none";
-  loading.style.display = "none";
-  validateSkuCount();
-  if (!form.checkValidity()) {
-    form.reportValidity();
-    return;
-  }
-
-  const details = Object.fromEntries(new FormData(form).entries());
-  if (String(details.website || "").trim()) return;
-
-  form.setAttribute("aria-busy", "true");
-  btn.disabled = true;
-  btn.textContent = "Submitting request...";
-  loading.style.display = "block";
-
-  const message =
-    "NEW VERTEX BENCHMARK REQUEST\n\n" +
-    "Name: " + details.name +
-    "\nCompany: " + details.company +
-    "\nEmail: " + details.email +
-    "\nCategory/role: " + (details.category || "-") +
-    "\n\n--- Priority SKUs / categories provided ---\n" + details.skus +
-    "\n\nLead destination: " + LEAD_DESTINATION +
-    "\nResponse target: one business day" +
-    "\nSubmitted: " + new Date().toLocaleString();
-
-  try {
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: { "Content-Type": "application/json", "Accept": "application/json" },
-      body: JSON.stringify({
-        access_key: VERTEX_INTAKE_KEY,
-        subject: "Vertex benchmark request - " + details.company,
-        from_name: "Vertex Benchmark Intake",
-        email: LEAD_DESTINATION,
-        replyto: details.email,
-        message
-      })
-    });
-    const result = await response.json();
-    if (!result.success) throw new Error("submit failed");
-    loading.style.display = "none";
-    ok.style.display = "block";
-    ok.focus();
-    form.reset();
-  } catch (_) {
-    loading.style.display = "none";
-    err.style.display = "block";
-    err.focus();
-  } finally {
-    form.setAttribute("aria-busy", "false");
-    btn.disabled = false;
-    btn.textContent = "Request my benchmark";
-  }
-});
+const VERTEX_INTAKE_KEY="d1ced289-a64f-47aa-91f5-ceaa254ee98f",LEAD_DESTINATION="braden@allyouneedpromos.com";const menu=document.querySelector('.menu'),mobileNav=document.getElementById('mobileNav'),form=document.getElementById('benchmarkForm'),ok=document.getElementById('ok'),err=document.getElementById('err'),loading=document.getElementById('loading'),btn=document.getElementById('submitBtn'),skus=document.getElementById('f-skus');
+menu.addEventListener('click',()=>{const open=!mobileNav.classList.contains('open');mobileNav.classList.toggle('open',open);menu.setAttribute('aria-expanded',String(open))});mobileNav.addEventListener('click',e=>{if(e.target.closest('a')){mobileNav.classList.remove('open');menu.setAttribute('aria-expanded','false')}});
+const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+async function loadPreview(){try{const response=await fetch('/data/products.json',{cache:'no-store'});if(!response.ok)throw new Error();const data=await response.json(),products=(data.products||[]).slice().sort((a,b)=>a.priority-b.priority).slice(0,3);document.getElementById('previewStatus').textContent=`${data.products.length} controlled records loaded · ${data.data_status}`;document.getElementById('productPreview').innerHTML=products.map(p=>{const image=p.image_url?`<img src="${esc(p.image_url)}" alt="${esc(p.name)} product image" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove();this.parentElement.querySelector('.placeholder').hidden=false">`:'';return `<article class="product"><div class="product-media">${image}<div class="placeholder" ${p.image_url?'hidden':''}>${esc(p.category[0])}</div><span class="image-state">${esc(p.image_status)}</span></div><div class="product-body"><h4>${esc(p.name)}</h4><div class="product-meta">${esc(p.category)} · ${esc(p.style)} · ${esc(p.record_status)}</div></div></article>`}).join('')}catch(e){document.getElementById('previewStatus').textContent='Product preview is temporarily unavailable.';document.getElementById('productPreview').innerHTML='<div class="card">The controlled dataset could not be loaded.</div>'}}loadPreview();
+function skuItems(v){return v.split(/\r?\n|,/).map(i=>i.trim()).filter(Boolean)}function validateSkuCount(){const valid=skuItems(skus.value).length>=1&&skuItems(skus.value).length<=10;skus.setCustomValidity(valid?'':'Enter between 1 and 10 priority SKUs or categories.');skus.setAttribute('aria-invalid',valid?'false':'true');return valid}skus.addEventListener('input',validateSkuCount);
+form.addEventListener('submit',async event=>{event.preventDefault();ok.style.display=err.style.display=loading.style.display='none';validateSkuCount();if(!form.checkValidity()){form.reportValidity();return}const details=Object.fromEntries(new FormData(form).entries());if(String(details.website||'').trim())return;form.setAttribute('aria-busy','true');btn.disabled=true;btn.textContent='Submitting request…';loading.style.display='block';const message=`NEW VERTEX BENCHMARK REQUEST\n\nName: ${details.name}\nCompany: ${details.company}\nEmail: ${details.email}\nCategory/role: ${details.category||'-'}\n\n--- Priority SKUs / categories provided ---\n${details.skus}\n\nLead owner: Braden\nResponse target: one business day\nSubmitted: ${new Date().toLocaleString()}`;try{const response=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({access_key:VERTEX_INTAKE_KEY,subject:`Vertex benchmark request - ${details.company}`,from_name:'Vertex Benchmark Intake',email:LEAD_DESTINATION,replyto:details.email,message})});const result=await response.json();if(!result.success)throw new Error();loading.style.display='none';ok.style.display='block';ok.focus();form.reset()}catch(e){loading.style.display='none';err.style.display='block';err.focus()}finally{form.setAttribute('aria-busy','false');btn.disabled=false;btn.textContent='Request my benchmark'}});
 </script>
 </body>
 </html>
